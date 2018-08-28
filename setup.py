@@ -3,7 +3,7 @@
 
 # python setup.py sdist
 # then :
-# twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+# twine upload --repository-url https://pypi.org/legacy/ dist/*
 
 
 from setuptools import setup, find_packages
@@ -25,7 +25,6 @@ long_description = meta_ns['__long_description__']
 author = meta_ns['__author__']
 author_email = meta_ns['__author_email__']
 url = meta_ns['__url__']
-# download_url = meta_ns['__download_url__']
 keywords = meta_ns['__keywords__']
 license = meta_ns['__license__']
 classifiers = meta_ns['__classifiers__']
@@ -48,7 +47,6 @@ setup(
     author=author,
     author_email=author_email,
     url=url,
-    # download_url=download_url,
     keywords=keywords,
     license=license,
     classifiers=classifiers,

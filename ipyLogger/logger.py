@@ -1,4 +1,4 @@
-__author__ = 'eillouz032618'
+__author__ = 'echo5india'
 
 import threading
 import logging
@@ -45,9 +45,8 @@ def _get_logger(env, loglevel, ipython_cell_number=None, **kwargs):
 
 def get_logger(env='', loglevel='INFO', **kwargs):
     """
-    :param: env : str : name of the ezbt module : Example: long_term
-
-    Returns a logger for the current ezbt env, logging level and service logging level
+    :param: env : str : name of the logger environment
+    Returns a logger for the current env, logging level and service logging level
     Returns:
         logging.Logger:  appropriate to current env.
     """
@@ -99,7 +98,7 @@ def is_in_ipython():
 
 
 class WidgetHandler(logging.Handler):
-    def __init__(self, *args, **kwargs):
+    def __init__(self, **kwargs):
         logging.Handler.__init__(self)
         self._console_cached = None
         formatter = kwargs.pop('formatter', ' %(name)s | %(asctime)s | %(levelname)s:  %(message)s')

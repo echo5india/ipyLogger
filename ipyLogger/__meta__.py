@@ -2,7 +2,7 @@ __name__ = 'ipyLogger'
 name_url = __name__.replace('_', '-')
 
 __packages__ = [__name__]
-__version__ = '0.0.1.dev1'
+__version__ = '0.0.1.dev3'
 __description__ = 'Efficient Logging in Jupyter Notebook'
 __long_description__ = 'See README'
 __author__ = 'echo5india'
